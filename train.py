@@ -54,8 +54,8 @@ solved_score = 14
 STEP 2: Start the Unity Environment
 # Use the corresponding call depending on your operating system 
 """
-env = UnityEnvironment(file_name="Banana_Mac/Banana.app")
-# - **Mac**: "Banana_Mac/Banana.app"
+env = UnityEnvironment(file_name="Banana.app")
+# - **Mac**: "Banana.app"
 # - **Windows** (x86): "Banana_Windows_x86/Banana.exe"
 # - **Windows** (x86_64): "Banana_Windows_x86_64/Banana.exe"
 # - **Linux** (x86): "Banana_Linux/Banana.x86"
