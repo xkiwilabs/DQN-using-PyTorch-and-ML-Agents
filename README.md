@@ -60,9 +60,7 @@ The state space has `37` dimensions and contains the agent's velocity, along wit
  - active the conda environment you created above
  - change the directory to the *yourpath/BananaNavigationProject* directory.
  - open `train.py`, find STEP 2 (lines 55 to 65) and set the relevant version of Banana to match your operating system.
- - run the following command
- 	
-		`python train.py`
+ - run the following command: `python train.py`
 	
  - training will complete once the agent reaches *solved_score* in `train.py`.
  - after training a *dqnAgent_Trained_Model_datetime.path* file will be saved with the trained model weights
@@ -76,9 +74,6 @@ The state space has `37` dimensions and contains the agent's velocity, along wit
 ## Testing
 - active the conda environment you created above
  - change the directory to the *yourpath/BananaNavigationProject* directory.
- - run the following command
- 
- 		`python test.py`
-	
+ - run the following command: `python test.py`
  - An example model weights file is included in the repository (*dqnAgent_Trained_Model.pth*).
  - A different model weights file can be tested by changing the model file name defined in `test.py` on line 109.
