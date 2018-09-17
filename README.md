@@ -1,4 +1,4 @@
-#Deep Q-Network (DQN) Reinforcement Learning for Unity ML-Agents Environments using PyTorch
+# Deep Q-Network (DQN) Reinforcement Learning for Unity ML-Agents Environments using PyTorch
 A simple example of how to implement vector based DQN using PyTorch for Unity ML-Agents applications.
 
 The repository includes the following files:
@@ -12,14 +12,14 @@ The repository also includes Mac/Linux/Windows versions of a simple Unity enviro
 This Unity application and testing environment was developed using ML-Agents Beta v0.4
 
 
-##Example Unity Environment - Banana's
+## Example Unity Environment - Banana's
 The example uses a modified version of the Unity ML-Agents Banana Collection Example Environment.
 The environment includes a single agent, who can turn left or right and move forward or backward.
 The agent's task is to collect yellow bananas (reward of +1) that are scattered around a square
 game area, while avoiding purple bananas (reward of -1). For the version of Bananas employed here,
 the environment is considered solved when the average score over the last 100 episodes > 13. 
 
-###Action Space
+### Action Space
 The simulation contains a single agent that navigates a large environment.  
 At each time step, it can perform four possible actions:
 - `0` - walk forward 
@@ -27,11 +27,11 @@ At each time step, it can perform four possible actions:
 - `2` - turn left
 - `3` - turn right
 
-###State Spaces 
+### State Spaces 
 The agent is trained from vector input (not pixel input)
 The state space has `37` dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction.  A reward of `+1` is provided for collecting a yellow banana, and a reward of `-1` is provided for collecting a purple banana. 
 
-##Installation and Dependencies
+## Installation and Dependencies
 1. Anaconda Python 3.6: Download and installation instructions here: https://www.anaconda.com/download/
 
 2. Create (and activate) a new conda, virtual environment with Python 3.6. For example:
@@ -49,7 +49,7 @@ The state space has `37` dimensions and contains the agent's velocity, along wit
 	- Change to the *yourpath/BananaNavigationProject/python/* subdirectory and run from the command line:
 	'<pip3 install .>'
 
-##Training
+## Training
  - active the conda environment you created above
  - change the directory to the *yourpath/BananaNavigationProject* directory.
  - open *train.py*, find STEP 2 (lines 55 to 65) and set the relevant version of Banana to match your operating system.
@@ -64,7 +64,7 @@ The state space has `37` dimensions and contains the agent's velocity, along wit
  ![Example of agent performance (score) as a function of training episodes](media/exampleTrainingScoresGraph.jpg)
 
 
-##Testing
+## Testing
 - active the conda environment you created above
  - change the directory to the *yourpath/BananaNavigationProject* directory.
  - run the following command
