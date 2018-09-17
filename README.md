@@ -36,25 +36,32 @@ The state space has `37` dimensions and contains the agent's velocity, along wit
 
 2. Create (and activate) a new conda, virtual environment with Python 3.6. For example:
 	- Linux or Mac:
+	
 	`conda create --name yourenvironamehere python=3.6`
-	`<source activate yourenvironamehere>`
+	
+	`source activate yourenvironamehere`
 
 	- Windows:
-	<conda create --name _yourenvironamehere_ python=3.6>
-	<activate yourenvironamehere>
+	
+	`conda create --name _yourenvironamehere_ python=3.6`
+	
+	`activate yourenvironamehere`
 
 3. Download or clone this repository.
 
 4. To install required dependencies (torch, ML-Agents trainers (v.4), etc...)
 	- Change to the *yourpath/BananaNavigationProject/python/* subdirectory and run from the command line:
-	<pip3 install .>
+	
+	`pip3 install .`
 
 ## Training
  - active the conda environment you created above
  - change the directory to the *yourpath/BananaNavigationProject* directory.
  - open *train.py*, find STEP 2 (lines 55 to 65) and set the relevant version of Banana to match your operating system.
  - run the following command
- 	<python train.py> 
+ 	
+	`python train.py`
+	
  - training will complete once the agent reaches *solved_score* in train.py.
  - after training a *dqnAgent_Trained_Model_datetime.path* file will be saved with the trained model weights
  - a *dqnAgent_scores_datetime.csv* file will also be saved with the scores received during training. You can use this file to plot or assess training performance (see below figure).
@@ -68,6 +75,8 @@ The state space has `37` dimensions and contains the agent's velocity, along wit
 - active the conda environment you created above
  - change the directory to the *yourpath/BananaNavigationProject* directory.
  - run the following command
- 	<python test.py>
+ 
+ 	`python test.py`
+	
  - An example model weights file is included in the repository (*dqnAgent_Trained_Model.pth*).
  - A different model weights file can be tested by changing the model file name defined in *test.py* on line 109.
