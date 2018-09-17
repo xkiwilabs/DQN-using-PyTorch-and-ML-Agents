@@ -37,14 +37,14 @@ num_episodes=10
 STEP 2: Start the Unity Environment
 # Use the corresponding call depending on your operating system 
 """
-env = UnityEnvironment(file_name="unityenvironments/Banana_Mac/Banana.app")
-# - **Mac**: `"path/to/Banana.app"`
-# - **Windows** (x86): `"path/to/Banana_Windows_x86/Banana.exe"`
-# - **Windows** (x86_64): `"path/to/Banana_Windows_x86_64/Banana.exe"`
-# - **Linux** (x86): `"path/to/Banana_Linux/Banana.x86"`
-# - **Linux** (x86_64): `"path/to/Banana_Linux/Banana.x86_64"`
-# - **Linux** (x86, headless): `"path/to/Banana_Linux_NoVis/Banana.x86"`
-# - **Linux** (x86_64, headless): `"path/to/Banana_Linux_NoVis/Banana.x86_64"`
+env = UnityEnvironment(file_name="Banana_Mac/Banana.app")
+# - **Mac**: "Banana_Mac/Banana.app"
+# - **Windows** (x86): "Banana_Windows_x86/Banana.exe"
+# - **Windows** (x86_64): "Banana_Windows_x86_64/Banana.exe"
+# - **Linux** (x86): "Banana_Linux/Banana.x86"
+# - **Linux** (x86_64): "Banana_Linux/Banana.x86_64"
+# - **Linux** (x86, headless): "Banana_Linux_NoVis/Banana.x86"
+# - **Linux** (x86_64, headless): "Banana_Linux_NoVis/Banana.x86_64"
 
 """
 #######################################
@@ -63,7 +63,7 @@ brain = env.brains[brain_name]
 
 """
 #############################################
-STEP 3: Determine the size of the Action and State Spaces
+STEP 4: Determine the size of the Action and State Spaces
 # 
 # The simulation contains a single agent that navigates a large environment.  
 # At each time step, it can perform four possible actions:
@@ -87,7 +87,7 @@ state_size = brain.vector_observation_space_size
 
 """
 ###################################
-STEP 4: Initialize a DQN Agent from the Agent Class in dqn_agent.py
+STEP 5: Initialize a DQN Agent from the Agent Class in dqn_agent.py
 A DQN agent initialized with the following state, action and DQN hyperparameters.
     DQN Agent Parameters
     ======
@@ -110,7 +110,7 @@ agent.network.load_state_dict(torch.load('dqnAgent_Trained_Model.pth'))
 
 """
 ###################################
-STEP 5: Play Banana for specified number of Episodes
+STEP 6: Play Banana for specified number of Episodes
 """
 # loop from num_episodes
 for i_episode in range(1, num_episodes+1):
@@ -157,7 +157,7 @@ for i_episode in range(1, num_episodes+1):
 
 """
 ###################################
-STEP 6: Everything is Finished -> Close the Environment.
+STEP 7: Everything is Finished -> Close the Environment.
 """
 env.close()
 
