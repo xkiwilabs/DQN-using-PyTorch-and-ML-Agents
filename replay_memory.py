@@ -1,5 +1,5 @@
 """
-DQN Agent for Vector Observation Learning
+Replay Memory Class for DQN Agent for Vector Observation Learning
 
 Example Developed By:
 Michael Richardson, 2018
