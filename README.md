@@ -37,22 +37,22 @@ The state space has `37` dimensions and contains the agent's velocity, along wit
 2. Create (and activate) a new conda, virtual environment with Python 3.6. For example:
 	- Linux or Mac:
 	
-	`conda create --name yourenvironamehere python=3.6`
+		`conda create --name yourenvironamehere python=3.6`
 	
-	`source activate yourenvironamehere`
+		`source activate yourenvironamehere`
 
 	- Windows:
 	
-	`conda create --name _yourenvironamehere_ python=3.6`
+		`conda create --name _yourenvironamehere_ python=3.6`
 	
-	`activate yourenvironamehere`
+		`activate yourenvironamehere`
 
 3. Download or clone this repository.
 
 4. To install required dependencies (torch, ML-Agents trainers (v.4), etc...)
 	- Change to the *yourpath/BananaNavigationProject/python/* subdirectory and run from the command line:
 	
-	`pip3 install .`
+		`pip3 install .`
 
 ## Training
  - active the conda environment you created above
