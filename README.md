@@ -49,16 +49,33 @@ The state space has `37` dimensions and contains the agent's velocity, along wit
 	
 		`activate yourenvironamehere`
 
-3. Download or clone this repository.
+3. Download and save this repository.
 
 4. To install required dependencies (torch, ML-Agents trainers (v.4), etc...)
-	- Change to the *yourpath/BananaNavigationProject/python/* subdirectory and run from the command line:
+	- Change to the '.python/' subdirectory of this GitHub repository and run from the command line:
 	
 		`pip3 install .`
+		
+## Download the Unity Environment
+For this example project, you will not need to install Unity - this is because we will be using a version of the Banana's unity environment that is already built (compiled) as a standalone application. 
+
+Download the relevant environment zip file from one of the links below. You need only select the environment that matches your operating system:
+
+Linux: click here
+Mac OSX: click here
+Windows (32-bit): click here
+Windows (64-bit): click here
+
+After you have downloaded the relevant zip file, navigate to where you downloaded and saved this GitHub repository and place the file in the main folder of the repository, then unzip (or decompress) the file.
+
+(For Windows users) Check out this link if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
+
+NOTE: The Banana environment is similar to, but not identical to the Banana Collector environment on the Unity ML-Agents GitHub page. The versions of Banana employed for this project were developed for the Udacity Deep Reinforcement Nanodegree course. For more information about this course visit: https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893
+
 
 ## Training
  - active the conda environment you created above
- - change the directory to the *yourpath/BananaNavigationProject* directory.
+ - change the directory to the 'yourpath/thisgithubrepository' directory.
  - open `train.py`, find STEP 2 (lines 55 to 65) and set the relevant version of Banana to match your operating system.
  - run the following command:
  
@@ -75,7 +92,7 @@ The state space has `37` dimensions and contains the agent's velocity, along wit
 
 ## Testing
 - active the conda environment you created above
- - change the directory to the *yourpath/BananaNavigationProject* directory.
+ - change the directory to the 'yourpath/thisgithubrepository' directory.
  - run the following command:
  
  	`python test.py`
