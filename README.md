@@ -59,16 +59,16 @@ The state space has `37` dimensions and contains the agent's velocity, along wit
 ## Training
  - active the conda environment you created above
  - change the directory to the *yourpath/BananaNavigationProject* directory.
- - open *train.py*, find STEP 2 (lines 55 to 65) and set the relevant version of Banana to match your operating system.
+ - open `train.py`, find STEP 2 (lines 55 to 65) and set the relevant version of Banana to match your operating system.
  - run the following command
  	
 		`python train.py`
 	
- - training will complete once the agent reaches *solved_score* in train.py.
+ - training will complete once the agent reaches *solved_score* in `train.py`.
  - after training a *dqnAgent_Trained_Model_datetime.path* file will be saved with the trained model weights
  - a *dqnAgent_scores_datetime.csv* file will also be saved with the scores received during training. You can use this file to plot or assess training performance (see below figure).
- - It is recommended that you train multiple agents and test different hyperparameter settings in train.py and dqn_agent.py.
- - For more information about the DQN training algorithm and the training hyperparameters see the included Report.pdf file.
+ - It is recommended that you train multiple agents and test different hyperparameter settings in `train.py` and `dqn_agent.py`.
+ - For more information about the DQN training algorithm and the training hyperparameters see the included `Report.pdf` file.
 
  ![Example of agent performance (score) as a function of training episodes](media/exampleTrainingScoresGraph.jpg)
 
@@ -81,4 +81,4 @@ The state space has `37` dimensions and contains the agent's velocity, along wit
  		`python test.py`
 	
  - An example model weights file is included in the repository (*dqnAgent_Trained_Model.pth*).
- - A different model weights file can be tested by changing the model file name defined in *test.py* on line 109.
+ - A different model weights file can be tested by changing the model file name defined in `test.py` on line 109.
