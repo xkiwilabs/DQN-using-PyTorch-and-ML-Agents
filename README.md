@@ -21,7 +21,7 @@ The agent's task is to collect yellow bananas (reward of +1) that are scattered 
 game area, while avoiding purple bananas (reward of -1). For the version of Bananas employed here,
 the environment is considered solved when the average score over the last 100 episodes > 13. 
 
-![Trained DQN-Agent Collecting Yellows Banana's](media/bananacollector.gif)
+![Trained DQN-Agent Collecting Yellows Banana's](media/bananacollection.gif)
 
 ### Action Space
 At each time step, the agent can perform four possible actions:
