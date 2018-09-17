@@ -1,7 +1,7 @@
 # Deep Q-Network (DQN) Reinforcement Learning using PyTorch and Unity ML-Agents
 A simple example of how to implement vector based DQN using PyTorch and Unity ML-Agents applications.
 
-The repository includes the following files:
+The repository includes the following DQN related files:
 - dqn_agent.py : dqn-agent implementation
 - replay_memory.py : dqn-agent's replay buffer implementation
 - model.py ; example PyTorch neural network for vector based DQN learning
@@ -11,6 +11,8 @@ The repository includes the following files:
 The repository also includes Mac/Linux/Windows versions of a simple Unity environment, *Banana*, for testing.
 This Unity application and testing environment was developed using ML-Agents Beta v0.4
 
+The files in the python/. directory are the ML-Agents toolkit files and dependencies required to run the Banana environment.
+For more information about the Unity ML-Agents Toolkit visit: https://github.com/Unity-Technologies/ml-agents
 
 ## Example Unity Environment - Banana's
 The example uses a modified version of the Unity ML-Agents Banana Collection Example Environment.
@@ -60,7 +62,7 @@ The state space has `37` dimensions and contains the agent's velocity, along wit
  - open *train.py*, find STEP 2 (lines 55 to 65) and set the relevant version of Banana to match your operating system.
  - run the following command
  	
-	`python train.py`
+		`python train.py`
 	
  - training will complete once the agent reaches *solved_score* in train.py.
  - after training a *dqnAgent_Trained_Model_datetime.path* file will be saved with the trained model weights
@@ -76,7 +78,7 @@ The state space has `37` dimensions and contains the agent's velocity, along wit
  - change the directory to the *yourpath/BananaNavigationProject* directory.
  - run the following command
  
- 	`python test.py`
+ 		`python test.py`
 	
  - An example model weights file is included in the repository (*dqnAgent_Trained_Model.pth*).
  - A different model weights file can be tested by changing the model file name defined in *test.py* on line 109.
