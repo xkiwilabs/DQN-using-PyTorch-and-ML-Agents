@@ -4,7 +4,6 @@ DQN for Unity ML-Agents Environments using PyTorch
 Includes examples of the following DQN training algorithms:
   -> Vanilla DNQ, 
   -> Double-DQN (DDQN)
-  -> with or without Prioritized Replay Memory
 
 The example uses a modified version of the Unity ML-Agents Banana Collection Example Environment.
 The environment includes a single agent, who can turn left or right and move forward or backward.
