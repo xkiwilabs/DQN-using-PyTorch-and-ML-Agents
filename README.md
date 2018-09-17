@@ -15,7 +15,7 @@ The files in the python/. directory are the ML-Agents toolkit files and dependen
 For more information about the Unity ML-Agents Toolkit visit: https://github.com/Unity-Technologies/ml-agents
 
 ## Example Unity Environment - Banana's
-The example uses a modified version of the Unity ML-Agents Banana Collection Example Environment.
+The example uses a modified version of the Unity ML-Agents Banana Collection example Environment.
 The environment includes a single agent, who can turn left or right and move forward or backward.
 The agent's task is to collect yellow bananas (reward of +1) that are scattered around a square
 game area, while avoiding purple bananas (reward of -1). For the version of Bananas employed here,
@@ -40,20 +40,20 @@ The state space has `37` dimensions and contains the agent's velocity, along wit
 2. Create (and activate) a new conda (virtual) environment with Python 3.6.
 	- Linux or Mac:
 	
-		`conda create --name yourenvironamehere python=3.6`
+		`conda create --name yourenvnamehere python=3.6`
 	
-		`source activate yourenvironamehere`
+		`source activate yourenvnamehere`
 
 	- Windows:
 	
-		`conda create --name _yourenvironamehere_ python=3.6`
+		`conda create --name yourenvnamehere python=3.6`
 	
-		`activate yourenvironamehere`
+		`activate yourenvnamehere`
 
 3. Download and save this GitHub repository.
 
 4. To install required dependencies (torch, ML-Agents trainers (v.4), etc...)
-	- Naviagte to where you dowlaoded and saved this GitHub repository (e.g., *yourpath/thisgithubrepository*) 
+	- Naviagte to where you downloaded and saved this GitHub repository (e.g., *yourpath/thisgithubrepository*) 
 	- Change to the '.python/' subdirectory and run from the command line:
 	
 		`pip3 install .`
@@ -73,7 +73,7 @@ After you have downloaded the relevant zip file, navigate to where you downloade
 NOTE: The Banana environment is similar to, but not identical to the Banana Collector environment on the Unity ML-Agents GitHub page. 
 
 ## Training
- - active the conda environment you created above
+ - activate the conda environment you created above
  - change the directory to the 'yourpath/thisgithubrepository' directory.
  - open `train.py`, find STEP 2 (lines 55 to 65) and set the relevant version of Banana to match your operating system.
  - run the following command:
@@ -90,7 +90,7 @@ NOTE: The Banana environment is similar to, but not identical to the Banana Coll
 
 
 ## Testing
- - active the conda environment you created above
+ - activate the conda environment you created above
  - change the directory to the 'yourpath/thisgithubrepository' directory.
  - run the following command:
  
