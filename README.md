@@ -1,15 +1,15 @@
 # Deep Q-Network (DQN) Reinforcement Learning using PyTorch and Unity ML-Agents
-A simple example of how to implement vector based DQN using PyTorch and Unity ML-Agents applications.
+A simple example of how to implement vector based DQN using PyTorch and a ML-Agents environment.
 
 The repository includes the following DQN related files:
-- dqn_agent.py : dqn-agent implementation
-- replay_memory.py : dqn-agent's replay buffer implementation
-- model.py ; example PyTorch neural network for vector based DQN learning
-- train.py : initializes and implements the training processes for a DQN-agent.
-- test.py : testes a trained DQN-agent
+- dqn_agent.py -> dqn-agent implementation
+- replay_memory.py -> dqn-agent's replay buffer implementation
+- model.py -> example PyTorch neural network for vector based DQN learning
+- train.py -> initializes and implements the training processes for a DQN-agent.
+- test.py -> testes a trained DQN-agent
 
 The repository also includes Mac/Linux/Windows versions of a simple Unity environment, *Banana*, for testing.
-This Unity application and testing environment was developed using ML-Agents Beta v0.4
+This Unity application and testing environment was developed using ML-Agents Beta v0.4. The version of the Banana environment employed for this project was developed for the Udacity Deep Reinforcement Nanodegree course. For more information about this course visit: https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893
 
 The files in the python/. directory are the ML-Agents toolkit files and dependencies required to run the Banana environment.
 For more information about the Unity ML-Agents Toolkit visit: https://github.com/Unity-Technologies/ml-agents
@@ -22,21 +22,20 @@ game area, while avoiding purple bananas (reward of -1). For the version of Bana
 the environment is considered solved when the average score over the last 100 episodes > 13. 
 
 ### Action Space
-The simulation contains a single agent that navigates a large environment.  
-At each time step, it can perform four possible actions:
+At each time step, the agent can perform four possible actions:
 - `0` - walk forward 
 - `1` - walk backward
 - `2` - turn left
 - `3` - turn right
 
 ### State Spaces 
-The agent is trained from vector input (not pixel input)
+The agent is trained from vector input data (not pixel input data)
 The state space has `37` dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction.  A reward of `+1` is provided for collecting a yellow banana, and a reward of `-1` is provided for collecting a purple banana. 
 
 ## Installation and Dependencies
 1. Anaconda Python 3.6: Download and installation instructions here: https://www.anaconda.com/download/
 
-2. Create (and activate) a new conda, virtual environment with Python 3.6. For example:
+2. Create (and activate) a new conda (virtual) environment with Python 3.6.
 	- Linux or Mac:
 	
 		`conda create --name yourenvironamehere python=3.6`
@@ -49,17 +48,18 @@ The state space has `37` dimensions and contains the agent's velocity, along wit
 	
 		`activate yourenvironamehere`
 
-3. Download and save this repository.
+3. Download and save this GitHub repository.
 
 4. To install required dependencies (torch, ML-Agents trainers (v.4), etc...)
-	- Change to the '.python/' subdirectory of this GitHub repository and run from the command line:
+	- Naviagte to where you dowlaoded and saved this GitHub repository (e.g., *yourpath/thisgithubrepository*) 
+	- Change to the '.python/' subdirectory and run from the command line:
 	
 		`pip3 install .`
 		
 ## Download the Unity Environment
-For this example project, you will not need to install Unity - this is because we will be using a version of the Banana's unity environment that is already built (compiled) as a standalone application. 
+For this example project, you will not need to install Unity - this is because you can use a version of the Banana's unity environment that is already built (compiled) as a standalone application. 
 
-Download the relevant environment zip file from one of the links below. You need only select the environment that matches your operating system:
+Download the relevant environment zip file from one of the links below. You need only to download the environment that matches your operating system:
 
 - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
 - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
@@ -68,10 +68,7 @@ Download the relevant environment zip file from one of the links below. You need
 
 After you have downloaded the relevant zip file, navigate to where you downloaded and saved this GitHub repository and place the file in the main folder of the repository, then unzip (or decompress) the file.
 
-(For Windows users) Check out this link if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
-
-NOTE: The Banana environment is similar to, but not identical to the Banana Collector environment on the Unity ML-Agents GitHub page. The versions of Banana employed for this project were developed for the Udacity Deep Reinforcement Nanodegree course. For more information about this course visit: https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893
-
+NOTE: The Banana environment is similar to, but not identical to the Banana Collector environment on the Unity ML-Agents GitHub page. 
 
 ## Training
  - active the conda environment you created above
@@ -91,7 +88,7 @@ NOTE: The Banana environment is similar to, but not identical to the Banana Coll
 
 
 ## Testing
-- active the conda environment you created above
+ - active the conda environment you created above
  - change the directory to the 'yourpath/thisgithubrepository' directory.
  - run the following command:
  
