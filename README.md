@@ -36,8 +36,8 @@ The state space has `37` dimensions and contains the agent's velocity, along wit
 
 2. Create (and activate) a new conda, virtual environment with Python 3.6. For example:
 	- Linux or Mac:
-	<conda create --name yourenvironamehere python=3.6>
-	<source activate yourenvironamehere>
+	`conda create --name yourenvironamehere python=3.6`
+	`<source activate yourenvironamehere>`
 
 	- Windows:
 	<conda create --name _yourenvironamehere_ python=3.6>
