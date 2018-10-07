@@ -8,6 +8,7 @@ The repository includes the following DQN related files:
 - model.py -> example PyTorch neural network for vector based DQN learning
 - train.py -> initializes and implements the training processes for a DQN-agent.
 - test.py -> testes a trained DQN-agent
+
 Code expanded and adapted from code examples provided by Udacity DRL Team, 2018.
 
 The repository also includes Mac/Linux/Windows versions of a simple Unity environment, *Banana*, for testing.
