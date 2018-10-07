@@ -17,6 +17,8 @@ This Unity application and testing environment was developed using ML-Agents Bet
 The files in the python/. directory are the ML-Agents toolkit files and dependencies required to run the Banana environment.
 For more information about the Unity ML-Agents Toolkit visit: https://github.com/Unity-Technologies/ml-agents
 
+For further details about DQN see: Mnih, V., Kavukcuoglu, K., Silver, D., Rusu, A. A., Veness, J., Bellemare, M. G., ... & Petersen, S. (2015). Human-level control through deep reinforcement learning. Nature, 518(7540), 529.
+
 ## Example Unity Environment - Banana's
 The example uses a modified version of the Unity ML-Agents Banana Collection example Environment.
 The environment includes a single agent, who can turn left or right and move forward or backward.
