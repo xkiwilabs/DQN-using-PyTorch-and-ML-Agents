@@ -1,5 +1,6 @@
 # Deep Q-Network (DQN) Reinforcement Learning using PyTorch and Unity ML-Agents
 A simple example of how to implement vector based DQN using PyTorch and a ML-Agents environment.
+Project for Udacity Danaodgree in Deep Reinforcement Learning (DRL)
 
 The repository includes the following DQN related files:
 - dqn_agent.py -> dqn-agent implementation
@@ -7,6 +8,7 @@ The repository includes the following DQN related files:
 - model.py -> example PyTorch neural network for vector based DQN learning
 - train.py -> initializes and implements the training processes for a DQN-agent.
 - test.py -> testes a trained DQN-agent
+Code expanded and adapted from code examples provided by Udacity DRL Team, 2018.
 
 The repository also includes Mac/Linux/Windows versions of a simple Unity environment, *Banana*, for testing.
 This Unity application and testing environment was developed using ML-Agents Beta v0.4. The version of the Banana environment employed for this project was developed for the Udacity Deep Reinforcement Nanodegree course. For more information about this course visit: https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893
